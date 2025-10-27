@@ -1,13 +1,21 @@
 #include <iostream>
 #include <string>
-
+#include "utilities.h"
 int main(){
 	
 	bool runProgram = true;
-	sqlInstruction = "";
+	
+	std::string sqlInstruction = "";
+		
+	std::cout << "welcome to the program!\n";
 	while(runProgram){
-		cin.getline(sqlInstruction);
-		cout << sqlInstruction;	
+		//		clearScreen();
+
+		std::cout << "Enter a string: ";
+
+
+		std::getline(std::cin, sqlInstruction);
+		std::cout << sqlInstruction << std::endl;	
 	}
 
 	return 0;
